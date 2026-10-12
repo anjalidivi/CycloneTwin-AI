@@ -1,0 +1,47 @@
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+frontend/.tmp/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Python virtual environment & bytecode
+backend/.venv/
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local Environment Variables & Secrets
+.env
+backend/.env
+frontend/.env.local
+
+# Uploads and temporary generated reports
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/generated_reports/*
+!backend/generated_reports/.gitkeep
+
+# Large Datasets & Raw Meteorological Archives
+*.csv
+*.tsv
+*.nc
+*.tar.gz
+*.zip
+backend/app/data/*.csv
+backend/app/data/ibtracs_cache.json
+!backend/app/data/sample_cyclones.json
+!backend/tests/fixtures/*.csv
+
+# Operating System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
